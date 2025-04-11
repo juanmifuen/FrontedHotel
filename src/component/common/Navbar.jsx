@@ -26,6 +26,15 @@ function Navbar() {
                 <li><NavLink to="/rooms" activeclassname="active">Habitacion</NavLink></li>
                 <li><NavLink to="/find-booking" activeclassname="active">Encontrar reservas</NavLink></li>
 
+
+
+                {/* Nuevo ítem de predicción */}
+    {isAuthenticated && (
+        <li><NavLink to="/prediccion" activeclassname="active">Predicción</NavLink></li>
+    )}
+
+
+
                 {isUser && <li><NavLink to="/profile" activeclassname="active">Perfil</NavLink></li>}
                 {isAdmin && <li><NavLink to="/admin" activeclassname="active">Admin</NavLink></li>}
 

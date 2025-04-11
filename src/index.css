@@ -1163,4 +1163,60 @@ h2 {
         display: block;
     }
 
+
+
+
+
+
+/* index.css */
+
+.prediccion-page h1 {
+    color: #1e293b;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .prediccion-page form {
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .prediccion-page label {
+    font-weight: 500;
+    color: #334155;
+  }
+  
+  .prediccion-page input,
+  .prediccion-page select {
+    font-size: 0.95rem;
+  }
+  
+  .prediccion-resultado {
+    background-color: #f1f5f9;
+    border: 2px dashed #cbd5e1;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .prediccion-resultado span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .prediccion-resultado .text-red-600 {
+    color: #dc2626;
+  }
+  
+  .prediccion-resultado .text-green-600 {
+    color: #16a34a;
+  }
+  
+
+
+  
 }

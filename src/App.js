@@ -1,6 +1,7 @@
 
 
 // Enrutamineto
+
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './component/common/Navbar';
@@ -19,6 +20,8 @@ import ManageBookingsPage from './component/admin/ManageBookingsPage';
 import EditBookingPage from './component/admin/EditBookingPage';
 import ProfilePage from './component/profile/ProfilePage';
 import EditProfilePage from './component/profile/EditProfilePage';
+import PrediccionReserva from './component/prediccion/Prediccion';
+
 import { ProtectedRoute, AdminRoute } from './service/guard';
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
         <div className="content">
           <Routes>
             {/* Public Routes */}
+
+            <Route path="/prediccion" element={<PrediccionReserva />} />
+
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />

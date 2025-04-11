@@ -189,4 +189,28 @@ export default class ApiService {
         const role = localStorage.getItem('role')
         return role === 'USER'
     }
+
+ /** PREDICCIÓN DE CANCELACIÓN */
+static async predecirCancelacion(datosPrediccion) {
+    try {
+        const response = await axios.post(`${this.BASE_URL}/prediccion/api`, datosPrediccion, {
+            headers: this.getHeader()
+        });
+        return response.data; // { cancelara: true/false, confianza: double }
+    } catch (error) {
+        console.error("Error al predecir cancelación:", error);
+        throw error;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 }
